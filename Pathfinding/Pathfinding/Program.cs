@@ -29,6 +29,8 @@ namespace Pathfinding
             {
                 Console.WriteLine(ans.ElementAt(i) + '\n');
             }
+            Console.WriteLine("Press Enter to close the program. . .");
+            Console.ReadLine();
         }
     }
 }
