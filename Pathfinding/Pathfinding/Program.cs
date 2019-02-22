@@ -15,8 +15,8 @@ namespace Pathfinding
             int row = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("How many cols you want: ");
             int col = Convert.ToInt32(Console.ReadLine());
-            string[,] arr = new string[row, col];
-            for(int i=0;i<row;i++)
+            string[,] arr = new string[row, col];   //tells user how many rows and cols u want then stores that info
+            for (int i=0;i<row;i++)   //asks user if you want an "x" or "-" in your 2d arr
             {
                 for(int j=0;j<col;j++)
                 {
@@ -24,8 +24,8 @@ namespace Pathfinding
                     arr[i, j] = Console.ReadLine();
                 }
             }
-            List<string> ans = t.FindPath(arr);
-            for(int i=0;i<ans.Count;i++)
+            List<string> ans = t.FindPath(arr);   //creates the list of ans
+            for(int i=0;i<ans.Count;i++)  //prints the list
             {
                 Console.WriteLine(ans.ElementAt(i) + '\n');
             }
